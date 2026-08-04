@@ -1,0 +1,57 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="80" x2="1420" y2="920" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="0.45" stop-color="#E2E8F0"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="260" y1="170" x2="1320" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#334155" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="warm" x1="280" y1="220" x2="1230" y2="810" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F59E0B" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity="0.82"/>
+    </linearGradient>
+    <filter id="shadow" x="120" y="110" width="1360" height="780" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#0F172A" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" rx="40" fill="url(#bg)"/>
+  <circle cx="1320" cy="190" r="170" fill="#FFFFFF" fill-opacity="0.45"/>
+  <circle cx="260" cy="840" r="210" fill="#F8FAFC" fill-opacity="0.55"/>
+  <path d="M120 760C250 650 420 620 560 690C700 760 830 930 1080 870C1260 824 1360 706 1480 690V940H120V760Z" fill="#FFFFFF" fill-opacity="0.35"/>
+
+  <g filter="url(#shadow)">
+    <rect x="170" y="150" width="1260" height="700" rx="30" fill="url(#accent)"/>
+    <rect x="210" y="190" width="1180" height="620" rx="24" fill="#0B1220" fill-opacity="0.18" stroke="#FFFFFF" stroke-opacity="0.18"/>
+
+    <rect x="250" y="235" width="240" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.14"/>
+    <rect x="250" y="285" width="520" height="24" rx="12" fill="#FFFFFF" fill-opacity="0.35"/>
+    <rect x="250" y="322" width="420" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.22"/>
+
+    <rect x="250" y="390" width="420" height="250" rx="26" fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="710" y="390" width="360" height="250" rx="26" fill="#FFFFFF" fill-opacity="0.10" stroke="#FFFFFF" stroke-opacity="0.12"/>
+    <rect x="1110" y="390" width="190" height="250" rx="26" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-opacity="0.12"/>
+
+    <path d="M290 580L372 498L450 548L528 456L608 514" stroke="url(#warm)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="291" cy="580" r="10" fill="#F59E0B"/>
+    <circle cx="372" cy="498" r="10" fill="#F59E0B"/>
+    <circle cx="450" cy="548" r="10" fill="#F59E0B"/>
+    <circle cx="528" cy="456" r="10" fill="#F59E0B"/>
+    <circle cx="608" cy="514" r="10" fill="#F59E0B"/>
+
+    <rect x="740" y="432" width="240" height="20" rx="10" fill="#FFFFFF" fill-opacity="0.28"/>
+    <rect x="740" y="468" width="260" height="18" rx="9" fill="#FFFFFF" fill-opacity="0.18"/>
+    <rect x="740" y="508" width="170" height="54" rx="18" fill="#F59E0B" fill-opacity="0.9"/>
+    <rect x="740" y="576" width="210" height="16" rx="8" fill="#FFFFFF" fill-opacity="0.20"/>
+
+    <rect x="1148" y="432" width="110" height="110" rx="24" fill="#FFFFFF" fill-opacity="0.16"/>
+    <rect x="1148" y="566" width="110" height="52" rx="18" fill="#FFFFFF" fill-opacity="0.12"/>
+    <circle cx="1202" cy="487" r="26" fill="#F59E0B" fill-opacity="0.85"/>
+  </g>
+
+  <text x="250" y="720" fill="#E2E8F0" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="600" letter-spacing="0.04em">DEMO PROJECT IMAGE</text>
+  <text x="250" y="760" fill="#CBD5E1" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="400">Reusable hero art for portfolio cards</text>
+</svg>
