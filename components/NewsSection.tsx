@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { news } from "@/data/news";
 
 export default function NewsSection() {
@@ -103,7 +104,14 @@ export default function NewsSection() {
 
           return (
             <div key={item.id} className="shrink-0 w-[160px] snap-start">
-              {item.href ? (
+              {item.detail ? (
+                <Link
+                  href={`/news/${item.slug}`}
+                  className="block h-full transition-transform hover:-translate-y-0.5"
+                >
+                  {Card}
+                </Link>
+              ) : item.href ? (
                 <a
                   href={item.href}
                   target="_blank"

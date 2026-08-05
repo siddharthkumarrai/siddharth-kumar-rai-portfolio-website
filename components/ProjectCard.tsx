@@ -1,30 +1,56 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 import type { Project } from "@/data/projects";
 
 export default function ProjectCard({ project }: { project: Project }) {
+  const TitleContent = (
+    <h3 className="text-2xl font-bold leading-tight tracking-tight text-slate-700">
+      {project.title}
+    </h3>
+  );
+
   return (
     <article className="group">
       <div className="flex flex-row gap-6 items-start">
         {project.image && (
           <div className="relative w-[280px] shrink-0 overflow-hidden rounded-xl bg-slate-100 shadow-[0_14px_34px_rgba(15,23,42,0.12)] ring-1 ring-slate-200/60 transition-transform duration-300 group-hover:-translate-y-0.5">
             <div className="relative aspect-video w-full">
-              <Image
-                src={project.image}
-                alt={project.title}
-                fill
-                sizes="280px"
-                className="object-cover"
-              />
+              {project.slug ? (
+                <Link href={`/projects/${project.slug}`} className="block h-full">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    sizes="280px"
+                    className="object-cover"
+                  />
+                </Link>
+              ) : (
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  sizes="280px"
+                  className="object-cover"
+                />
+              )}
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 via-transparent to-transparent" />
           </div>
         )}
 
         <div className="min-w-0 pt-1">
-          <h3 className="text-2xl font-bold leading-tight tracking-tight text-slate-700">
-            {project.title}
-          </h3>
+          {project.slug ? (
+            <Link
+              href={`/projects/${project.slug}`}
+              className="transition-colors hover:text-blue-600"
+            >
+              {TitleContent}
+            </Link>
+          ) : (
+            TitleContent
+          )}
 
           {project.publisher && (
             <p className="mt-1 text-sm text-blue-600">
@@ -55,6 +81,15 @@ export default function ProjectCard({ project }: { project: Project }) {
           </div>
 
           <div className="mt-4 flex flex-wrap gap-3">
+            {project.slug && (
+              <Link
+                href={`/projects/${project.slug}`}
+                className="inline-flex items-center gap-1 text-sm font-medium text-blue-700 hover:underline"
+              >
+                View Details
+                <ExternalLink size={12} />
+              </Link>
+            )}
             {project.links.map((link) => (
               <a
                 key={link.label}
