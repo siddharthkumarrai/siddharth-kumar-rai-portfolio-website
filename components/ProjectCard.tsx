@@ -17,11 +17,6 @@ export default function ProjectCard({ project }: { project: Project }) {
                 className="object-cover"
               />
             </div>
-            {project.eyebrow && (
-              <div className="absolute left-3 top-3 rounded bg-white/75 px-3 py-1 text-sm font-medium text-slate-500 backdrop-blur-[2px]">
-                {project.eyebrow}
-              </div>
-            )}
             <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 via-transparent to-transparent" />
           </div>
         )}

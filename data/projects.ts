@@ -25,7 +25,7 @@ export const projects: Project[] = [
     publisher: "Siddharth Kumar Rai",
     publisherHref: "https://github.com/siddharthkumarrai",
     eyebrow: "Introducing",
-    image: "/projects/skillslms.png",
+    image: "https://res.cloudinary.com/dombv2xju/image/upload/v1785866199/Screenshot_2026-08-04_232601_rvrt8f.png",
     tag: "Featured",
     stack: ["Next.js", "TypeScript", "Python", "FastAPI", "LangGraph", "RAG", "MongoDB", "Razorpay"],
     tldr:
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     publisher: "Siddharth Kumar Rai",
     publisherHref: "https://github.com/siddharthkumarrai",
     eyebrow: "Introducing",
-    image: "/projects/lumenskart.png",
+    image: "https://res.cloudinary.com/dombv2xju/image/upload/v1785866439/Screenshot_2026-08-04_233009_blxwd2.png",
     tag: "Featured",
     stack: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe", "Sanity"],
     tldr:
