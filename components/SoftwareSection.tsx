@@ -3,7 +3,7 @@ import { repos } from "@/data/software";
 
 export default function SoftwareSection() {
   return (
-    <section className="mt-14 pb-32">
+    <section className="mt-14 pb-64">
       <h2>
         Software
       </h2>
