@@ -681,7 +681,7 @@ void loop() {
     publisher: "Siddharth Kumar Rai",
     publisherHref: "https://github.com/siddharthkumarrai",
     eyebrow: "Featured",
-    image: "/projects/demo-project.svg",
+    image: "https://res.cloudinary.com/dombv2xju/image/upload/v1786039096/Screenshot_2026-08-06_232645_epr4b6.png",
     tag: "Framework",
     stack: ["JavaScript", "UI Design", "Responsive Layout"],
     tldr:
@@ -691,6 +691,7 @@ void loop() {
       "Kept the experience responsive so the browsing flow remains usable across mobile and desktop screens."
     ],
     links: [
+      { label: "Live Demo", href: "https://siddharthkumarrai-project.onrender.com/listings" },
       { label: "GitHub", href: "https://github.com/siddharthkumarrai/siddharth_Airbnb_Clone" }
     ],
     slug: "StayHive",
