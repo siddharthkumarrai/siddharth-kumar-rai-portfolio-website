@@ -5,7 +5,7 @@ import SoftwareSection from "./SoftwareSection";
 
 export default function RightColumn() {
   return (
-    <main className="h-full overflow-y-auto pb-6 scrollbar-hide">
+    <main className="h-full overflow-y-auto scrollbar-hide">
       <IntroSection />
       <NewsSection />
       <ProjectsSection />

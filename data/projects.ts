@@ -654,28 +654,30 @@ void loop() {
     },
   },
   {
-    id: "weather-app",
-    title: "Weather Web Application",
+    id: "MODULEUI",
+    title: "A Modular UI Component Library",
     publisher: "Siddharth Kumar Rai",
     publisherHref: "https://github.com/siddharthkumarrai",
     eyebrow: "Featured",
-    image: "/projects/demo-project.svg",
+    image: "https://res.cloudinary.com/dombv2xju/image/upload/v1786034850/Screenshot_2026-08-06_221609_ybnsv4.png",
     tag: "Website",
-    stack: ["React", "Vite", "JavaScript", "Weather API"],
+    stack: ["React", "Vite", "JavaScript", "Tailwind CSS", "Next.js"],
     tldr:
-      "A lightweight weather dashboard for checking current conditions and forecasts with a clean, fast interface optimized for quick lookups.",
+      "A modular React component library built with Vite and Tailwind CSS, designed for rapid prototyping and consistent UI patterns across projects.",
     bullets: [
-      "Kept the interface intentionally compact so the core weather state is visible immediately on load.",
-      "Used a simple API-driven render path that is easy to extend with location search, alerts, or saved cities."
+      "Built a modular component library in React with Vite and Tailwind CSS for rapid prototyping and consistent UI patterns.",
+      "Designed components to be highly customizable and reusable across different projects, ensuring a scalable design system.",
+      "Integrated the library with Next.js for server-side rendering and optimized performance.",
     ],
     links: [
-      { label: "GitHub", href: "https://github.com/siddharthkumarrai/weather_web_application" }
+      { label: "Live Demo", href: "https://moduleui.vercel.app/" },
+      { label: "GitHub", href: "https://github.com/siddharthkumarrai/moduleui" }
     ],
-    slug: "weather-app",
+    slug: "moduleui",
   },
   {
-    id: "airbnb-clone",
-    title: "Airbnb Clone",
+    id: "StayHive",
+    title: "StayHive",
     publisher: "Siddharth Kumar Rai",
     publisherHref: "https://github.com/siddharthkumarrai",
     eyebrow: "Featured",
@@ -691,6 +693,6 @@ void loop() {
     links: [
       { label: "GitHub", href: "https://github.com/siddharthkumarrai/siddharth_Airbnb_Clone" }
     ],
-    slug: "airbnb-clone",
+    slug: "StayHive",
   },
 ];
