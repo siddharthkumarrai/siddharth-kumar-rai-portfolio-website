@@ -614,8 +614,8 @@ void loop() {
       "Modeled the content flow around CMS-driven updates so merchandised pages can be changed without redeploying the core app."
     ],
     links: [
-      { label: "Live Demo", href: "https://lumenskart.vercel.app/" },
-      { label: "GitHub", href: "https://github.com/siddharthkumarrai" }
+      { label: "Live Demo", href: "https://yadumart.vercel.app" },
+      { label: "GitHub", href: "https://github.com/siddharthkumarrai/ecom" }
     ],
     slug: "lumenskart",
     detail: {
@@ -648,8 +648,8 @@ void loop() {
         },
       ],
       links: [
-        { label: "Live Demo", href: "https://lumenskart.vercel.app/" },
-        { label: "GitHub", href: "https://github.com/siddharthkumarrai" },
+        { label: "Live Demo", href: "https://yadumart.vercel.app" },
+        { label: "GitHub", href: "https://github.com/siddharthkumarrai/ecom" },
       ],
     },
   },

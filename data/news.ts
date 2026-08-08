@@ -152,7 +152,10 @@ export const news: NewsItem[] = [
           content: "Built with modern Next.js patterns including server components and streaming, Lumenskart achieves near-instant page loads while maintaining full functionality. The integrated admin CMS eliminates the need for third-party tools, giving complete control over the store.",
         },
       ],
-      links: [],
+      links: [
+        { label: "Live Demo", href: "https://yadumart.vercel.app" },
+        { label: "GitHub", href: "https://github.com/siddharthkumarrai/ecom" },
+      ],
     },
   },
   {
